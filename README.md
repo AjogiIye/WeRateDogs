@@ -1,0 +1,9 @@
+#  DATA WRANGLING
+
+Data wrangling encompasses the process of gathering, assessing, and cleaning data respectively. For this project, data was gathered from three (3) different sources viz: A csv file provided by Udacity with 2500 tweets by the WeRateDogs Twitter handle, Breed prediction of Dogs tsv file downloaded programmatically from Udacity’s server and additional data retrieved from twitter’s API calls about tweet_id used to generate retweet counts and favorite counts and storing JSON object as a text file.
+
+For this project, I commenced the wrangling process by manually downloading the “twitter_archive_enhanced csv” file provided by Udacity, used code on jupyter notebook to download the “image-predictions.tsv” file programmatically, and finally, an application for the developer account was filed to Twitter which was approved and subsequently used to query the extra data needed as per requirement and stored in the “tweet_json.txt” file.
+
+However, all three (3) data gathered for the project as a file were read using panda’s library into df_arc, tw_tweet, and tw_pred tables respectively. I assessed the data for quality issues, and tidiness issues of which eleven (11) quality issues and four (4) tidiness were discovered and detailed in the wrangle_act file. I carried out visual assessments via excel spreadsheet and using data frames in the jupyter notebook. During the assessment, I revealed incorrect dog names and rating_numerator amongst other errors in the excel sheet. Furthermore, during the programmatic assessment; I discovered incorrect and inconsistent datatypes in timestamp and tweet_id variable columns correspondingly. 
+
+Finally, during the cleaning process, I copied all three (3) data frames and then applied the important changes documented in the assessment stage.
